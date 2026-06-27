@@ -28,18 +28,6 @@ data:
   AMQP_USER: "cm9ib3Nob3A="
   AMQP_PASS: "cm9ib3Nob3AxMjM="
 ---
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: payment
-  namespace: roboshop
-  labels:
-    component: payment
-    project: roboshop
-data:
-  REDIS_URL: "redis://redis:6379"
-  MONGO_URL: "mongodb://mongodb:27017/payments"
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
