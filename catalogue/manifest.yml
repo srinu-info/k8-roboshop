@@ -37,6 +37,9 @@ spec:
       containers:
       - name: catalogue
         image: joindevops/catalogue:v1
+        envFrom:
+        - ConfigMapRef:
+            name: catalogue
 
 ---
 apiVersion: v1
